@@ -67,23 +67,39 @@
 
 // task_21
 
-function findLongestWord(string) {
-  const arrey = string.split(" ");
-  console.log(arrey);
+// function findLongestWord(string) {
+//   const array = string.split(" ");
 
-  for (i = 0; i < arrey.length; i += 1) {
-    // console.log(arrey[i].length);
-    let longestWordLength = arrey[1].length;
-    if (arrey[i].length > arrey[1].length) {
-      longestWordLength = arrey[i].length;
-    } else {
-      return;
-    }
+//   let longestWordLength = array[0].length;
+//   let longestWord = array[0];
 
-    console.log(arrey[i]);
-  }
-}
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i].length > longestWordLength) {
+//       longestWordLength = array[i].length;
+//       longestWord = array[i];
+//     }
 
-findLongestWord("The quick brown fox jumped over the lazy dog");
-findLongestWord("Google do a roll");
-findLongestWord("May the force be with you");
+//     console.log(longestWord);
+//   }
+// }
+
+// function findLongestWord(string) {
+//   const array = string.split(" ");
+
+//   let lengthOfWord = array[0].length;
+//   let longestWord = array[0];
+
+//   for (let i = 1; i < array.length; i += 1) {
+//     if (array[i].length > lengthOfWord) {
+//       lengthOfWord = array[i].length;
+//       longestWord = array[i];
+//     }
+//     console.log(longestWord);
+//   }
+//   return longestWord;
+// }
+
+// var_win
+// function findLongestWord(string) {
+//   console.log(string.split(" ").sort((a, b) => b.length - a.length)[0]);
+// }
