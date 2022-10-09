@@ -155,6 +155,11 @@
 // Проверь работу скрипта для слепдующих значений переменной incomingValue:
 // null, undefined, 0, false. Используй оператор ?? (nullish coalescing operator).
 
+// const incomingValue = 5;
+// const defoultValue = 10;
+// const value = incomingValue || defoultValue;
+// console.log(value);
+
 // const dbName = '';
 // const name = dbName ?? 'undefined';
 // console.log(name);

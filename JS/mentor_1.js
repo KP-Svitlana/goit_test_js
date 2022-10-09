@@ -204,7 +204,26 @@
 // makeDish("Mango", "apple pie");
 // makeDish("Poly", "muffins");
 
-// task_12 -ДЗ
+// task_12 -ДЗ - done
 // Напишіть функцію savePassword(password), яка приймає пароль та повертає внутрішню функцію,
 //     яка приймає рядок та повертає true, якщо рядок співпадає зі збереженим паролем,
 //     та false - якщо не співпадає
+
+// function savePassword(corectPassword) {
+//   const userDate = prompt("Please add the password:");
+//   return userPassword(userDate, corectPassword);
+// }
+
+// function userPassword(userDate, corectPassword) {
+//   if (userDate === corectPassword) {
+//     result = true;
+//     alert("YeeY!");
+//   } else {
+//     result = false;
+//     alert("Wrong password");
+//   }
+
+//   return result;
+// }
+
+// savePassword("Admin");
