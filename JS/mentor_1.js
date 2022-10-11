@@ -165,19 +165,49 @@
 // }
 // console.log(sum);
 
-// task_8 - ДЗ
+// task_8 - ДЗ - done
 // Напиши цикл, який пропонує ввести число більше 100 через prompt.
 // Якщо користувач ввів інше число - попросити ввести ще раз і так далі.
 // Цикл повинен запитувати число, поки користувач не введе число більше 100,
 //   або не натисне кнопку "Відміна"
 
-// task_9 - ДЗ
+// let userName = "";
+
+// do {
+//   userName = Number(prompt("Enter the number more then 100", ""));
+// } while (userName < 100);
+
+// console.log("The number is:", userName);
+
+// task_9 - ДЗ -done
 // У змінній  min лежить число від 0 до 59.
 // // Потрібно визначити, в яку чтверть години потрапить це число(в першу, другу, третю або четверту)
 
-// task_10 - ДЗ
+// let min = 46;
+
+// if (min < 15) {
+//   console.log(`Number ${min} apply to 1 quarter`);
+// } else if (min < 30 && min > 15) {
+//   console.log(`Number ${min} apply to 2 quarter`);
+// } else if (min < 45 && min > 30) {
+//   console.log(`Number ${min} apply to 3 quarter`);
+// } else {
+//   console.log(`Number ${min} apply to 4 quarter`);
+// }
+
+// task_10 - ДЗ - done
 // Напишіть програму, яка отримає від користувача число(кількість хвилин)
 // і виведе у консоль рядок у форматі годин та хвилин
+
+// let userMinutes = 1400;
+
+// let hours = Math.floor(userMinutes / 60);
+// console.log(hours);
+
+// let minutes = userMinutes % 60;
+// console.log(minutes);
+
+// console.log(`${hours} hours, ${minutes} minutes`);
 
 // task_11
 // Потрібно виконати рефакторинг коду так, щоб не потрібно було кожного разу передавати ім"я шефа
