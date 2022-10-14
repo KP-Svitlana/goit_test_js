@@ -143,36 +143,68 @@
 //    */
 //   getTransactionTotal(type) {},
 
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
 
-const account = {
-  balance: 0,
-  transaction: [],
+// const account = {
+//   balance: 0,
+//   transaction: [],
 
-  createTransaction(amount, type) {
-    const newTransaction = {
-      id: `${type}__${this.transaction.length + 1}`,
-      type,
-      amount,
-    };
-    this.transaction.push(newTransaction);
+//   createTransaction(amount, type) {
+//     const newTransaction = {
+//       id: `${this.transaction.length + 1}__${type}`,
+//       type,
+//       amount,
+//     };
+//     this.transaction.push(newTransaction);
 
-    console.log(newTransaction);
-    return newTransaction;
-  },
+//     console.log(newTransaction);
+//     return newTransaction;
+//   },
 
-  deposit(amount) {
-    this.createTransaction(amount, Transaction.DEPOSIT);
-    this.balance += amount;
-  },
-};
+//   deposit(amount) {
+//     this.createTransaction(amount, Transaction.DEPOSIT);
+//     this.balance += amount;
+//   },
 
-// account.createTransaction(1000, "deposit");
-// account.createTransaction(1000, "deposit");
+//   withdraw(amount) {
+//     this.createTransaction(amount, Transaction.WITHDRAW);
 
-account.deposit(20000);
-account.deposit(30000);
-console.log(account.balance);
+//     if (amount > this.balance) {
+//       console.log("You don't have enough money at the account");
+//       return;
+//     }
+//     this.balance -= amount;
+//   },
+
+//   getBalance() {
+//     console.log(this.balance);
+//   },
+
+//   getTransactionDetails(id) {
+//     for (const transaction of this.transaction) {
+//       if (transaction.id === id) {
+//         return transaction;
+//       }
+//     }
+//   },
+
+//   getTransaction(type) {
+//     let total = 0;
+//     for (const transaction of this.transaction) {
+//       if (type === transaction.type) {
+//         total += transaction.amount;
+//       }
+//       return total;
+//     }
+//   },
+// };
+
+// account.deposit(2000);
+// account.withdraw(1000);
+// account.withdraw(2000);
+// account.getBalance();
+// console.log(account.transaction);
+// console.log(account.getTransactionDetails("3__withdraw"));
