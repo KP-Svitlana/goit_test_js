@@ -115,3 +115,97 @@
 // console.log(calculateTotalPrice("Droid"));
 // console.log(calculateTotalPrice("Grip"));
 // console.log(calculateTotalPrice("Scanner"));
+
+// task_26
+
+// function calculateMeanTemperature(forecast) {
+//   const {
+//     today: { low: todayLow, high: todayHigh },
+//     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+//   } = forecast;
+//   //   const todayLow = forecast.today.low;
+//   //   const todayHigh = forecast.today.high;
+//   //   const tomorrowLow = forecast.tomorrow.low;
+//   //   const tomorrowHigh = forecast.tomorrow.high;
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(
+//   calculateMeanTemperature({
+//     today: { low: 28, high: 32 },
+//     tomorrow: { low: 25, high: 29 },
+//   })
+// );
+
+// console.log(
+//   calculateMeanTemperature({
+//     today: { low: 37, high: 40 },
+//     tomorrow: { low: 33, high: 38 },
+//   })
+// );
+
+// task_30
+
+// function makeTask(data) {
+//   //   const completed = false;
+//   //   const category = "General";
+//   //   const priority = "Normal";
+//   const {
+//     text,
+//     completed = false,
+//     category = "General",
+//     priority = "Normal",
+//   } = data;
+//   const newTask = { text, completed, category, priority, ...data };
+//   // Change code above this line
+
+//   return newTask;
+// }
+
+// console.log(makeTask({}));
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+
+// console.log(makeTask({ text: "Buy bread" }));
+
+// task_31
+// function add(...args) {
+//   // Change code above this line
+//   let sum = 0;
+//   for (let arg of args) {
+//     sum += arg;
+//   }
+//   return sum;
+// }
+
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+// task_35
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+//     return this.books;
+
+//     // Change code above this line
+//   },
+// };
+
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
