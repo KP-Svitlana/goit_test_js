@@ -1,4 +1,11 @@
-.item-btn {
+.list-of-buttons {
+  list-style: none;
+}
+
+.list-of-buttons__btn {
   background-color: teal;
-  color: tomato;
+  color: white;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
 }
