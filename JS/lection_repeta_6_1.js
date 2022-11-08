@@ -23,3 +23,6 @@
 // const heroTitleEL = document.querySelector(".hero__title");
 // console.log(heroTitleEL);
 // console.log(heroTitleEL.textContent);
+
+// const myHTML = document.querySelector(".hero__section");
+// console.log(myHTML);
