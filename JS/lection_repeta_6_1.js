@@ -26,3 +26,9 @@
 
 // const myHTML = document.querySelector(".hero__section");
 // console.log(myHTML);
+
+const titleEl = document.querySelector(".hero__title");
+console.log(titleEl);
+
+const titleParent = titleEl.firstElementChild;
+console.log(titleParent);
