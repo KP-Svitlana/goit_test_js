@@ -61,12 +61,12 @@
 // Your task is to write a function which returns
 // the time since midnight in milliseconds.
 
-function getFoundMillisec(h, m, s) {
-  const minutes = h * 60;
-  const seconds = (minutes + m) * 60;
-  const millisec = (seconds + s) * 1000;
+// function getFoundMillisec(h, m, s) {
+//   const minutes = h * 60;
+//   const seconds = (minutes + m) * 60;
+//   const millisec = (seconds + s) * 1000;
 
-  return millisec;
-}
+//   return millisec;
+// }
 
-getFoundMillisec(0, 1, 1);
+// getFoundMillisec(0, 1, 1);

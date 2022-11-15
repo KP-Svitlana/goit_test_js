@@ -71,28 +71,28 @@
 //Добавь методы addNote(note), removeNote(text)
 //updatePriority(text, newPriority)
 
-// class Notes {
-//   constructor() {
-//     this.items = [];
-//   }
+class Notes {
+  constructor() {
+    this.items = [];
+  }
 
-//   addNote(note) {
-//     this.items.push(note);
-//   }
+  addNote(note) {
+    this.items.push(note);
+  }
 
-//   removeNote(text) {
-//     const index = this.items.findIndex((element) => element.text === text);
+  removeNote(text) {
+    const index = this.items.findIndex((element) => element.text === text);
 
-//     if (index !== -1) {
-//       this.items.splice(index, 1);
-//     }
-//     console.log(index);
-//   }
-// }
+    if (index !== -1) {
+      this.items.splice(index, 1);
+    }
+    console.log(index);
+  }
+}
 
-// const note1 = new Notes();
-// note1.addNote({ text: "I love JS!", priority: "hight" });
-// note1.addNote({ text: "I love HTML", priority: "hight" });
-// note1.addNote({ text: "I love Node", priority: "hight" });
-// note1.removeNote("I love JS!");
-// console.table(note1);
+const note1 = new Notes();
+note1.addNote({ text: "I love JS!", priority: "hight" });
+note1.addNote({ text: "I love HTML", priority: "hight" });
+note1.addNote({ text: "I love Node", priority: "hight" });
+note1.removeNote("I love JS!");
+console.table(note1);
