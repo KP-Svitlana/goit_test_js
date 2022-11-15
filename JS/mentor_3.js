@@ -71,28 +71,44 @@
 //Добавь методы addNote(note), removeNote(text)
 //updatePriority(text, newPriority)
 
-class Notes {
-  constructor() {
-    this.items = [];
-  }
+// class Notes {
+//     static = {
+//       LOW_priority: "low",
+//       MEDIUM_priority: "medium",
+//       HIEGHT_priority: "hieght",
+//     };
 
-  addNote(note) {
-    this.items.push(note);
-  }
+//   constructor() {
+//     this.items = [];
+//   }
 
-  removeNote(text) {
-    const index = this.items.findIndex((element) => element.text === text);
+//   addNote(note) {
+//     this.items.push(note);
+//   }
 
-    if (index !== -1) {
-      this.items.splice(index, 1);
-    }
-    console.log(index);
-  }
-}
+//   removeNote(text) {
+//     const index = this.items.findIndex((element) => element.text === text);
 
-const note1 = new Notes();
-note1.addNote({ text: "I love JS!", priority: "hight" });
-note1.addNote({ text: "I love HTML", priority: "hight" });
-note1.addNote({ text: "I love Node", priority: "hight" });
-note1.removeNote("I love JS!");
-console.table(note1);
+//     if (index !== -1) {
+//       this.items.splice(index, 1);
+//     }
+//     console.log(index);
+//   }
+
+//   updatePriority({ text, newPriority }) {
+//     this.items.filter((text) => {
+//       if (text === this.items.text) {
+//         return (this.items.text = newPriority);
+//       }
+//       console.log(this.items.text);
+//     });
+//   }
+// }
+
+// const note1 = new Notes();
+// note1.addNote({ text: "I love JS!", priority: "hight" });
+// note1.addNote({ text: "I love HTML", priority: "hight" });
+// note1.addNote({ text: "I love Node", priority: "hight" });
+// note1.removeNote("I love JS!");
+// note1.updatePriority("I love HTML", "low");
+// console.table(note1);
