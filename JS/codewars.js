@@ -70,3 +70,36 @@
 // }
 
 // getFoundMillisec(0, 1, 1);
+
+// Task_4
+
+const a = [6, 2, 1, 8, 10];
+const b = [1, 1, 11, 2, 3];
+const c = [null, 0];
+const d = [[-6, -20, -1, -10, -12], -28];
+const f = [];
+
+function sumArrey(array) {
+  if (array.length === 1 || array.includes(null)) {
+    return 0;
+  } else {
+    const newArray = [...array]
+      .join(",")
+      .split(",")
+      .map((el) => Number(el))
+      .sort((a, b) => a - b);
+    const deleteFirstElement = newArray.splice(0, 1);
+    const deleteLastElement = newArray.splice(newArray.length - 1, 1);
+    const sumOfArray = newArray.reduce(
+      (total, element) => (total += element),
+      0
+    );
+    return sumOfArray;
+  }
+}
+
+console.log(sumArrey(a));
+console.log(sumArrey(b));
+console.log(sumArrey(c));
+console.log(sumArrey(d));
+console.log(sumArrey(f));
