@@ -1,6 +1,8 @@
 // let userName;
 // console.log(userName);
 
+const { default: validator } = require("validator");
+
 // let userAge = 12;
 // let userLogin = "User";
 
