@@ -324,3 +324,57 @@
 // }
 
 // console.log(litres(12.3));
+
+// Task_17
+
+// Чтобы быть пожилым, член должен быть не моложе 55 лет и иметь гандикап больше 7.
+// В этом крокетном клубе гандикап варьируется от - 2 до + 26; чем лучше игрок, тем ниже гандикап.
+
+// const input = [
+//   [18, 20],
+//   [45, 2],
+//   [61, 12],
+//   [37, 6],
+//   [21, 21],
+//   [78, 9],
+// ];
+
+// function openOrSenior(data) {
+//   return data.map((e) => {
+//     if (e[0] >= 55 && e[1] >= 7) {
+//       return "Senior";
+//     } else {
+//       return "Open";
+//     }
+//   });
+// }
+
+// console.log(openOrSenior(input));
+
+// Task_18
+
+// function makeNegative(num) {
+//   if (num === 0) {
+//     return 0;
+//   } else {
+//     return Number("-" + Math.abs(num));
+//   }
+// }
+// console.log(makeNegative(1)); // return -1
+// console.log(makeNegative(-5)); // return -5
+// console.log(makeNegative(0)); // return 0
+// console.log(makeNegative(0.12)); // return -0.12
+
+// Task_19
+
+// const a = [1, 2, 2];
+
+// function squareSum(numbers) {
+//   return numbers
+//     .map((el) => el * el)
+//     .reduce((total, el) => {
+//       return total + el;
+//     }, 0);
+// }
+
+// console.log(squareSum(a));
