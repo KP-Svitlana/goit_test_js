@@ -245,3 +245,82 @@
 // }
 
 // console.log(rentalCarCost(10));
+
+// Task_12
+
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+// function evenOrOdd(number) {
+//   if (number % 2 === 0) {
+//     return "Even";
+//   } else {
+//     return "Odd";
+//   }
+// }
+
+// function evenOrOdd(number) {
+//   return number % 2 === 0 ? "Even" : "Odd";
+// }
+
+// console.log(evenOrOdd(345));
+
+// Task_13
+
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
+
+// function squareDigits(num) {
+//   const string = `${num}`;
+//   const array = string.split("");
+//   const newArray = array.map((el) => Math.pow(Number(el), 2)).join("");
+//   const final = Number(newArray);
+//   console.log(newArray);
+//   console.log(final);
+// }
+
+// function squareDigits(num) {
+//   return Number(
+//     num
+//       .toString()
+//       .split("")
+//       .map((el) => Math.pow(Number(el), 2))
+//       .join("")
+//   );
+// }
+// console.log(squareDigits(34));
+
+// Task_14
+
+// var isSquare = function (n) {
+//   return Number.isInteger(Math.sqrt(n));
+// };
+
+// console.log(isSquare(-1));
+
+// TAsk_15
+
+// var binary = "1101000";
+// var digit = parseInt(binary, 2);
+
+// console.log(digit);
+
+// const a = [1, 0, 1, 1];
+
+// const binaryArrayToNumber = (arr) => {
+//   const stringBinary = arr.join("");
+//   const digit = parseInt(stringBinary, 2);
+//   return digit;
+// };
+
+// console.log(binaryArrayToNumber(a));
+
+// Task_16
+
+// function litres(time) {
+//   return Math.floor(time * 0.5);
+// }
+
+// console.log(litres(12.3));
