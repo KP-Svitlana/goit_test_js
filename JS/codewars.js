@@ -378,3 +378,35 @@
 // }
 
 // console.log(squareSum(a));
+
+// TAsk_20
+
+// function solution(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(solution("world"));
+
+// Task_21
+
+// function areYouPlayingBanjo(name) {
+//   if (name[0] === "R" || name[0] === "r") {
+//     return `${name} plays banjo`;
+//   }
+//   return `${name} does not play banjo`;
+// }
+
+// console.log(areYouPlayingBanjo("Adam"));
+// console.log(areYouPlayingBanjo("Ringo"));
+
+// Task_22
+
+const reverseSeq = (n) => {
+  for (let i = 0; i <= n; i = +1) {
+    const array = [];
+    array.push(i);
+    console.log(array);
+  }
+};
+
+console.log(reverseSeq(5));
