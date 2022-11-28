@@ -402,11 +402,11 @@
 // Task_22
 
 const reverseSeq = (n) => {
-  for (let i = 0; i <= n; i = +1) {
-    const array = [];
+  const array = [];
+  for (let i = 0; i < n; i = +1) {
     array.push(i);
-    console.log(array);
   }
+  return array;
 };
 
 console.log(reverseSeq(5));
