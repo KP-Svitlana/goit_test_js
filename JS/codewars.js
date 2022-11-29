@@ -401,12 +401,25 @@
 
 // Task_22
 
-const reverseSeq = (n) => {
-  const array = [];
-  for (let i = 0; i < n; i = +1) {
-    array.push(i);
-  }
-  return array;
-};
+// const reverseSeq = (n) => {
+//   const array = [];
+//   for (let i = 1; i <= n; i += 1) {
+//     array.push(i);
+//   }
+//   return array.reverse();
+// };
 
-console.log(reverseSeq(5));
+// console.log(reverseSeq(5));
+
+// Task_23
+
+// function highAndLow(numbers) {
+//   const array = numbers.split(" ");
+//   const minNumber = Math.min(...array);
+//   const maxNumber = Math.max(...array);
+//   return `"${maxNumber} ${minNumber}"`;
+// }
+
+// console.log(highAndLow("1 2 3 4 5")); // return "5 1"
+// console.log(highAndLow("1 2 -3 4 5")); // return "5 -3"
+// console.log(highAndLow("1 9 3 4 -5")); // return "9 -5"
