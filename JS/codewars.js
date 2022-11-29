@@ -460,11 +460,15 @@
 
 // function descendingOrder(n) {
 //   const string = `${n}`;
-//   return string
+//   const number = string
 //     .split("")
 //     .map((el) => Number(el))
-//     .sort((a, b) => b - a);
+//     .sort((a, b) => b - a)
+//     .join("");
+
+//   return Number(number);
 // }
 
 // console.log(descendingOrder(42145));
 // console.log(descendingOrder(123456789)); //987654321
+// console.log(descendingOrder(0));
