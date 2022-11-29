@@ -423,3 +423,48 @@
 // console.log(highAndLow("1 2 3 4 5")); // return "5 1"
 // console.log(highAndLow("1 2 -3 4 5")); // return "5 -3"
 // console.log(highAndLow("1 9 3 4 -5")); // return "9 -5"
+
+// Task_24
+// a = [1];
+// b = [3, 5];
+// c = [7, 9, 11];
+// d = [13, 15, 17, 19];
+// e = [21, 23, 25, 27, 29];
+
+// function rowSumOddNumbers(n) {
+//   return n.reduce((t, el) => t + el);
+// }
+
+// console.log(rowSumOddNumbers(a));
+// console.log(rowSumOddNumbers(b));
+// console.log(rowSumOddNumbers(c));
+// console.log(rowSumOddNumbers(d));
+// console.log(rowSumOddNumbers(e));
+
+// // Task_25
+// function grow(x) {
+//   return x.reduce((t, el) => t * el);
+// }
+
+// Task_26
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   if (mpg * fuelLeft >= distanceToPump) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// console.log(zeroFuel(100, 50, 1));
+
+// Task_27
+
+// function descendingOrder(n) {
+//   const string = `${n}`;
+//   return string
+//     .split("")
+//     .map((el) => Number(el))
+//     .sort((a, b) => b - a);
+// }
+
+// console.log(descendingOrder(42145));
+// console.log(descendingOrder(123456789)); //987654321
