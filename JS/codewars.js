@@ -441,10 +441,12 @@
 // console.log(rowSumOddNumbers(d));
 // console.log(rowSumOddNumbers(e));
 
-// // Task_25
+// Task_25
 // function grow(x) {
-//   return x.reduce((t, el) => t * el);
+//   return x.reduce((t, el) => t * el, 1);
 // }
+
+// console.log(grow([1, 2, 3]));
 
 // Task_26
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
@@ -472,3 +474,81 @@
 // console.log(descendingOrder(42145));
 // console.log(descendingOrder(123456789)); //987654321
 // console.log(descendingOrder(0));
+
+// Task_28
+// Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+
+// The binary number returned should be a string.
+
+// Examples:(Input1, Input2 --> Output (explanation)))
+
+// function addBinary(a, b) {
+//   let sum = a + b;
+
+//   const array = [];
+
+//   for (i = sum; i >= 1; i = i / 2) {
+//     if (i % 2 === 0) {
+//       array.push(0);
+//       i = parseInt(i);
+//     } else {
+//       array.push(1);
+//       i = i - 1;
+//     }
+//     console.log(i);
+//   }
+
+//   return array.reverse().join("");
+// }
+
+// console.log(addBinary(99, 17));
+
+// Task_29
+
+// a = "aaabbbbhaijjjm"; //"0/14"
+// b = "aaaxbbbbyyhwawiwjjjwwm"; //"8/22"
+
+// function printerError(s) {
+//   const array = s.split("");
+//   const error = array.reduce((errors, el) => {
+//     if (el > "m") {
+//       errors += 1;
+//     }
+//     return errors;
+//   }, 0);
+
+//   return `${error}/${array.length}`;
+// }
+
+// // printerError(a);
+// console.log(printerError(b));
+
+// Task_30
+
+// function simpleMultiplication(number) {
+//   return number % 2 === 0 ? number * 8 : number * 9;
+// }
+
+// console.log(simpleMultiplication(3));
+
+// Task_31
+
+// function hasTwoCubeSums(n) {
+//   const array = [];
+//   for (i = 0; i <= n / 2; i += 1) {
+//     let c = Math.cbrt(n - Math.pow(i, 3));
+
+//     if (Number.isInteger(c)) {
+//       array.push({ i, c });
+//     }
+//     continue;
+//   }
+//   console.log(array);
+//   if (array.length >= 2) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(hasTwoCubeSums(1729));
+// console.log(hasTwoCubeSums(42));
