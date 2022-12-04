@@ -552,3 +552,32 @@
 
 // console.log(hasTwoCubeSums(1729));
 // console.log(hasTwoCubeSums(42));
+
+// Task_32
+
+// function boolToWord(bool) {
+//   return bool ? "Yes" : "No";
+// }
+
+// console.log(boolToWord(true));
+
+// Task 33
+
+// a = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
+
+// function findNeedle(haystack) {
+//   const index = haystack.findIndex((el) => el === "needle");
+//   return `found the needle at position ${index}`;
+// }
+
+// console.log(findNeedle(a));
+
+// Task_34
+
+function towerBuilder(nFloors) {
+  const array = [];
+  const maxNumberOFstars = nFloors * 2 - 1;
+  for (i = 1; i <= nFloors; i += 1) {
+    const a = `*`;
+  }
+}
