@@ -572,12 +572,100 @@
 
 // console.log(findNeedle(a));
 
-// Task_34
+// Task_34 - ???
 
-function towerBuilder(nFloors) {
-  const array = [];
-  const maxNumberOFstars = nFloors * 2 - 1;
-  for (i = 1; i <= nFloors; i += 1) {
-    const a = `*`;
-  }
-}
+// function towerBuilder(nFloors) {
+//   const array = [];
+//   const maxNumberOFstars = nFloors * 2 - 1;
+//   for (i = 1; i <= nFloors; i += 1) {
+//     const a = `*`;
+//   }
+// }
+
+// Task_35
+
+// a = [];
+// b = ["Peter"];
+// c = ["Jacob", "Alex"];
+// d = ["Max", "John", "Mark"];
+// e = ["Alex", "Jacob", "Mark", "Max"];
+
+// function likes(names) {
+//   if (names.length === 0) {
+//     return "no one likes this";
+//   } else if (names.length === 1) {
+//     const string = names.join("");
+//     return `${string} likes this`;
+//   } else if (names.length === 2) {
+//     const string = names.join(" and ");
+//     return `${string} like this`;
+//   } else if (names.length === 3) {
+//     const lastName = names.pop();
+//     const string = names.join(", ");
+//     return `${string} and ${lastName} like this`;
+//   } else {
+//     const lastName = names.splice(2);
+//     const string = names.join(", ");
+//     return `${string} and ${lastName.length} others like this`;
+//   }
+// }
+
+// console.log(likes(e));
+
+// Task_36 - ?? no pass test
+
+// const a = 1 + 1 / 4 + 1 / 7 + 1 / 10 + 1 / 13;
+// const b = 1 + 1 / 4;
+// const c = 1;
+// const d = 0;
+
+// function SeriesSum(n) {
+//   return n.toFixed(2).toString();
+// }
+
+// console.log(SeriesSum(d));
+
+// Task_37
+// function opposite(number) {
+//   return number > 0 ? -number : number * -1;
+// }
+
+// console.log(opposite(-4));
+
+// Task_38
+// function century(year) {
+//   if (year % 100 !== 0) {
+//     return Number.parseInt(year / 100) + 1;
+//   } else {
+//     return Number.parseInt(year / 100);
+//   }
+// }
+
+// console.log(century(1601));
+
+// Task_39 --?? do not passed the tests, need to lern String.prototype
+
+// const a = "How can mirrors be real if our eyes aren't real";
+
+// String.prototype.toJadenCase = function (string) {
+//   const array = string
+//     .split(" ")
+//     .map((el) => getUpperCase(el).join(""))
+//     .join(" ");
+//   console.log(array);
+// };
+
+// String.prototype.toJadenCase(a);
+
+// const b = "how";
+
+// function getUpperCase(word) {
+//   const array = word.split("");
+//   const firstletter = array.splice(0, 1);
+//   const firstletterToString = firstletter.join("").toUpperCase();
+
+//   const newArray = array.unshift(firstletterToString);
+//   return array;
+// }
+
+// console.log(getUpperCase(b));
