@@ -669,3 +669,31 @@
 // }
 
 // console.log(getUpperCase(b));
+
+// Task_40
+
+const a = [1, 2, "a", "b"];
+const b = [1, "a", "b", 0, 15];
+const c = [1, 2, "aasf", "1", "123", 123];
+
+function filter_list(l) {
+  const newArray = [];
+
+  const check = l.map((el) => Number(el));
+  check.forEach((element) => {
+    if (!Number.isNaN(element)) {
+      newArray.push(element);
+    }
+  });
+  console.log(check);
+  return newArray;
+  // Return a new array with the strings filtered out
+}
+
+console.log(filter_list(c));
+
+// Task_41
+// Task_42
+// Task_43
+// Task_44
+// Task_45
