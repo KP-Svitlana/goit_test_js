@@ -672,28 +672,69 @@
 
 // Task_40
 
-const a = [1, 2, "a", "b"];
-const b = [1, "a", "b", 0, 15];
-const c = [1, 2, "aasf", "1", "123", 123];
+// const a = [1, 2, "a", "b"];
+// const b = [1, "a", "b", 0, 15];
+// const c = [1, 2, "aasf", "1", "123", 123];
 
-function filter_list(l) {
-  const newArray = [];
+// function filter_list(l) {
+//   const newArray = [];
 
-  const check = l.map((el) => Number(el));
-  check.forEach((element) => {
-    if (!Number.isNaN(element)) {
-      newArray.push(element);
-    }
-  });
-  console.log(check);
-  return newArray;
-  // Return a new array with the strings filtered out
-}
+//   l.forEach((element) => {
+//     if (typeof element === "number") {
+//       newArray.push(element);
+//     }
+//   });
 
-console.log(filter_list(c));
+//   return newArray;
+// }
+// console.log(filter_list(a));
 
 // Task_41
+
+// a = "din"; // "((("
+// b = "recede"; //"()()()"
+// c = "Success"; //")())())"
+// d = "(( @"; //"))(("
+
+// function duplicateEncode(word) {
+//   const result = [];
+//   toLowerCaseArray = word.toLowerCase().split("");
+//   const array1 = toLowerCaseArray.filter((el, index, array) => {
+//     const newArray = [...toLowerCaseArray];
+//     newArray.splice(array.indexOf(el), 1);
+
+//     if (array.indexOf(el) === index && !newArray.includes(el)) {
+//       result.push("(");
+//     } else {
+//       result.push(")");
+//     }
+//   });
+
+//   return result.join("");
+// }
+
+// duplicateEncode(d);
+
 // Task_42
+
+a = [7]; //7
+b = [0]; // 0
+c = [1, 1, 2]; //2
+d = [0, 1, 0, 1, 0]; // 0
+e = [1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]; //1
+
+function findOdd(A) {
+  if (A.length === 1) {
+    return A[0];
+  }
+
+  A.forEach((element) => {
+    const array = A.filter((item) => item === element).length;
+    console.log(element, array);
+  });
+}
+
+console.log(findOdd(d));
 // Task_43
 // Task_44
 // Task_45
