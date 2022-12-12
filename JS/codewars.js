@@ -769,21 +769,91 @@
 // console.log(getSum(-1, 2));
 // console.log(getSum(1, 5));
 
-// Task_45
+// Task_45 -???
 
-function arrayDiff(a, b) {
-  a.map((el, i) => {
-    if (b.includes(el)) {
-      a.splice(i, 1);
-    }
-    console.log(a);
-    return;
-  });
+// function arrayDiff(a, b) {
+//   a.map((el, i) => {
+//     if (b.includes(el)) {
+//       a.splice(i, 1);
+//     }
+//   });
+//   console.log(a);
+//   return a;
+// }
 
-  return a;
-}
+// // arrayDiff([1, 2], [1]); //[2]
+// // arrayDiff([2, 1], [1]); //[2]
+// // arrayDiff([], [1]); //[]
+// // arrayDiff([1, 2, 3, 4], [1]); //[2,3,4]
+// arrayDiff([1, 2, 1, 1], [1]); // [2]
+// arrayDiff([1, 2, 2, 2, 3], [2]); //[1,3]
 
-arrayDiff([1, 2], [1]); //[2]
-arrayDiff([1, 2, 3, 4], [1]); //[2,3,4]
-arrayDiff([1, 2, 1, 1, 1], [1]); // [2]
-arrayDiff([1, 2, 2, 2, 3], [2]); //[1,3]
+// Task_46
+
+// 80 <= score < 90	'B'
+// 70 <= score < 80	'C'
+// 60 <= score < 70	'D'
+// 0 <= score < 60	'F'
+
+// function getGrade(s1, s2, s3) {
+//   const averegeGrade = (s1 + s2 + s3) / 3;
+
+//   if (90 <= averegeGrade && averegeGrade <= 100) {
+//     return "A";
+//   } else if (80 <= averegeGrade && averegeGrade < 90) {
+//     return "B";
+//   } else if (70 <= averegeGrade && averegeGrade < 80) {
+//     return "C";
+//   } else if (60 <= averegeGrade && averegeGrade < 70) {
+//     return "D";
+//   } else {
+//     return "F";
+//   }
+// }
+
+// // console.log(getGrade(95, 90, 93));
+// // console.log(getGrade(100, 85, 96));
+// // console.log(getGrade(92, 93, 94));
+// console.log(getGrade(70, 70, 100));
+// console.log(getGrade(82, 85, 87));
+// console.log(getGrade(84, 79, 85));
+// console.log(getGrade(89, 89, 90));
+
+// Task_47
+// function validatePIN(pin) {
+//   const numberPin = Number(pin);
+//   const array = pin.split("");
+
+//   if (
+//     !isNaN(numberPin) &&
+//     Number.isInteger(numberPin) &&
+//     !array.includes(".") &&
+//     !array.includes("-") &&
+//     (array.length === 4 || array.length === 6)
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(validatePIN("123"));
+// console.log(validatePIN("1.234"));
+// console.log(validatePIN("1234"));
+// console.log(validatePIN("123456"));
+// console.log(validatePIN("-1.234"));
+
+// Task_48
+// function fakeBin(x) {
+//   return x
+//     .split("")
+//     .map((el) => {
+//       if (el < 5) {
+//         return 0;
+//       }
+//       return 1;
+//     })
+//     .join("");
+// }
+
+// fakeBin("45385593107843568");
