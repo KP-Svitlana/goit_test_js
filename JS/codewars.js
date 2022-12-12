@@ -715,26 +715,75 @@
 
 // duplicateEncode(d);
 
-// Task_42
+// Task_42 - ???
 
-a = [7]; //7
-b = [0]; // 0
-c = [1, 1, 2]; //2
-d = [0, 1, 0, 1, 0]; // 0
-e = [1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]; //1
+// a = [7]; //7
+// b = [0]; // 0
+// c = [1, 1, 2]; //2
+// d = [0, 1, 0, 1, 0]; // 0
+// e = [1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]; //1
 
-function findOdd(A) {
-  if (A.length === 1) {
-    return A[0];
-  }
+// function findOdd(A) {
+//   if (A.length === 1) {
+//     return A[0];
+//   }
+//   const array = A.filter((el, i, a) => {
+//     let total = 0;
+//     if (a.indexOf(el) === i) {
+//       total += 1;
+//     } else {
 
-  A.forEach((element) => {
-    const array = A.filter((item) => item === element).length;
-    console.log(element, array);
+//     }
+//   });
+// }
+
+// console.log(findOdd(d));
+// Task_43
+
+// function getCount(str) {
+//   const result = str.split("").reduce((total, el) => {
+//     if (el === "a" || el === "e" || el === "i" || el === "o" || el === "u") {
+//       total += 1;
+//     }
+//     return total;
+//   }, 0);
+//   return result;
+// }
+
+// console.log(getCount("fhjntrao"));
+
+// Task_44
+
+// function getSum(a, b) {
+//   if (a === b) return a;
+
+//   let sum = 0;
+
+//   for (let i = Math.min(a, b); i <= Math.max(a, b); i += 1) {
+//     sum += i;
+//   }
+
+//   return sum;
+// }
+
+// console.log(getSum(-1, 2));
+// console.log(getSum(1, 5));
+
+// Task_45
+
+function arrayDiff(a, b) {
+  a.map((el, i) => {
+    if (b.includes(el)) {
+      a.splice(i, 1);
+    }
+    console.log(a);
+    return;
   });
+
+  return a;
 }
 
-console.log(findOdd(d));
-// Task_43
-// Task_44
-// Task_45
+arrayDiff([1, 2], [1]); //[2]
+arrayDiff([1, 2, 3, 4], [1]); //[2,3,4]
+arrayDiff([1, 2, 1, 1, 1], [1]); // [2]
+arrayDiff([1, 2, 2, 2, 3], [2]); //[1,3]
