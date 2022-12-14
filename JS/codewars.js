@@ -885,3 +885,75 @@
 // console.log(getMiddle("test"));
 // console.log(getMiddle("testing"));
 // console.log(getMiddle("middle"));
+
+// Task_51
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// const b = [];
+// const c = [1, 2, 0, -1, -2];
+
+// function countPositivesSumNegatives(input) {
+//   let x = 0;
+//   let y = 0;
+//   const newArray = [];
+//   if (!input || input.length === 0) {
+//     return [];
+//   }
+//   input.forEach((element) => {
+//     if (element > 0) {
+//       x += 1;
+//     } else {
+//       y += element;
+//     }
+//   });
+//   newArray.push(x);
+//   newArray.push(y);
+//   return newArray;
+// }
+
+// console.log(countPositivesSumNegatives(b));
+
+// Task_52
+
+// const a = "wnXcHJHAiw!YkoNowMwHz UDzdpdTQeW!OqseDjnbPU";
+
+// function removeExclamationMarks(s) {
+//   return s.replaceAll("!", "");
+// }
+
+// console.log(removeExclamationMarks(a));
+
+// Task_53
+
+// const a = []; //[]
+// const b = ["a", "b", "c"]; // ["1: a", "2: b", "3: c"]
+
+// var number = function (array) {
+//   if (!array || array.length === 0) {
+//     return [];
+//   }
+//   return array.map((el, index) => `${index + 1}: ${el}`);
+// };
+
+// console.log(number(b));
+
+// Task_54
+
+// function countBy(x, n) {
+//   let z = [];
+
+//   for (let i = 1; i <= n; i += 1) {
+//     a = x * i;
+//     z.push(a);
+//   }
+//   return z;
+// }
+
+// console.log(countBy(1, 10));
+// console.log(countBy(2, 5));
+// console.log(countBy(3, 6));
+
+// Task_55
+
+// function minMax(arr) {
+//   return [Math.min(...arr), Math.max(...arr)];
+// }
