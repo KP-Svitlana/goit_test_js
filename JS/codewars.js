@@ -957,3 +957,61 @@
 // function minMax(arr) {
 //   return [Math.min(...arr), Math.max(...arr)];
 // }
+
+// Task_56
+
+// const rps = (p1, p2) => {
+//   if (
+//     (p1 === "scissors" && p2 === "scissors") ||
+//     (p1 === "paper" && p2 === "paper") ||
+//     (p1 === "rock" && p2 === "rock")
+//   ) {
+//     return "Draw!";
+//   } else if (
+//     (p1 === "scissors" && p2 === "paper") ||
+//     (p1 === "paper" && p2 === "rock") ||
+//     (p1 === "rock" && p2 === "scissors")
+//   ) {
+//     return "Player 1 won!";
+//   } else {
+//     return "Player 2 won!";
+//   }
+// };
+
+// console.log(rps("rock", "scissors"));
+// console.log(rps("paper", "scissors"));
+// console.log(rps("rock", "rock"));
+
+// Task_57
+
+// const a = "String"; // "SSttrriinngg"
+// const b = "Hello World"; //"HHeelllloo  WWoorrlldd"
+// const c = "1234!_ "; //"11223344!!__  "
+
+// function doubleChar(str) {
+//   const array = str.split("");
+
+//   const newArray = [];
+//   array.forEach((element) => {
+//     newArray.push(element);
+//     newArray.push(element);
+//   });
+//   return newArray.join("");
+// }
+
+// console.log(doubleChar(a));
+
+// Task_58
+
+function count(string) {
+  const array = string.split("");
+
+  array.forEach((element) => {
+    const a = array.filter((item) => item === element).length;
+    console.log(a);
+  });
+
+  return {};
+}
+
+count("aba");
