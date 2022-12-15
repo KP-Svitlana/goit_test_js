@@ -1003,15 +1003,18 @@
 
 // Task_58
 
-function count(string) {
-  const array = string.split("");
+// function count(string) {
+//   const array = string.split("");
+//   const result = {};
 
-  array.forEach((element) => {
-    const a = array.filter((item) => item === element).length;
-    console.log(a);
-  });
+//   for (let elem of array) {
+//     if (result[elem] === undefined) {
+//       result[elem] = 1;
+//     } else {
+//       result[elem] += 1;
+//     }
+//   }
+//   return result;
+// }
 
-  return {};
-}
-
-count("aba");
+// console.log(count("aba"));
