@@ -1018,3 +1018,54 @@
 // }
 
 // console.log(count("aba"));
+
+// Task_59
+// const a = [1, 5.2, 4, 0, -1]; //9,2
+// const b = []; // 0
+// const c = [-2.398]; // -2.398
+
+// function sum(numbers) {
+//   if (!numbers) {
+//     return 0;
+//   }
+//   return numbers.reduce((total, el) => {
+//     total += el;
+
+//     return total;
+//   }, 0);
+// }
+
+// console.log(sum(c));
+// Task_60
+// const a = "TTTT"; //"UUUU"
+// const b = "GCAT"; //"GCAU"
+// const c = "GACCGCCGCC"; // "GACCGCCGCC"
+
+// function DNAtoRNA(dna) {
+//   return dna.replaceAll("T", "U");
+// }
+
+// console.log(DNAtoRNA(c));
+
+// Task_61
+// function betterThanAverage(classPoints, yourPoints) {
+//   classPoints.push(yourPoints);
+//   const total = classPoints.reduce((total, el) => {
+//     total += el;
+//     return total;
+//   }, 0);
+//   const gpa = total / classPoints.length;
+//   if (gpa > yourPoints) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// console.log(betterThanAverage([2, 3], 5)); //true
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)); //true
+// console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9)); //false
+
+// Task_62
+// Task_63
+// Task_64
