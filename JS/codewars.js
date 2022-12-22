@@ -1067,5 +1067,71 @@
 // console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9)); //false
 
 // Task_62
+// function findAverage(array) {
+//   if (!array || array.length === 0) {
+//     return 0;
+//   }
+//   const averege =
+//     array.reduce((t, e) => {
+//       t += e;
+//       return t;
+//     }, 0) / array.length;
+//   return averege;
+// }
+
+// console.log(findAverage([1, 2, 3, 4]));
+
 // Task_63
+
+// function alphabetPosition(text) {
+//   const newArray = [];
+//   const arr_en = [
+//     "a",
+//     "b",
+//     "c",
+//     "d",
+//     "e",
+//     "f",
+//     "g",
+//     "h",
+//     "i",
+//     "j",
+//     "k",
+//     "l",
+//     "m",
+//     "n",
+//     "o",
+//     "p",
+//     "q",
+//     "r",
+//     "s",
+//     "t",
+//     "u",
+//     "v",
+//     "w",
+//     "x",
+//     "y",
+//     "z",
+//   ];
+//   const array = text
+//     .replaceAll(".", "")
+//     .replaceAll("'", "")
+//     .replaceAll(" ", "")
+//     .toLowerCase()
+//     .split("");
+
+//   array.forEach((element) => {
+//     if (arr_en.includes(element)) {
+//       newArray.push(arr_en.indexOf(element) + 1);
+//     } else {
+//       return 0;
+//     }
+//   });
+//   return newArray.join(" ");
+// }
+
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
 // Task_64
+// Task_65
+// Task_66
