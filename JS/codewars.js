@@ -1133,5 +1133,62 @@
 // console.log(alphabetPosition("The sunset sets at twelve o' clock."));
 
 // Task_64
+
+// function isIsogram(str) {
+//   const array = str.toLowerCase().split("");
+//   const result = {};
+
+//   array.forEach((element) => {
+//     if (result[element] === undefined) {
+//       result[element] = 1;
+//     } else {
+//       result[element] += 1;
+//     }
+//   });
+
+//   const arrayOfValues = Object.values(result);
+//   return arrayOfValues.every((el) => el === 1);
+// }
+
+// // console.log(isIsogram("Dermatoglyphics")); //true
+// // console.log(isIsogram("moose")); //false
+// // console.log(isIsogram("aba")); //false
+// console.log(isIsogram("moOse")); //false
+// console.log(isIsogram("isIsogram")); //false;
+// console.log(isIsogram("")); //true;
+// console.log(isIsogram("isogram")); //true;
+
 // Task_65
+// function basicOp(operation, value1, value2) {
+//   if (operation === "+") {
+//     return value1 + value2;
+//   } else if (operation === "-") {
+//     return value1 - value2;
+//   } else if (operation === "*") {
+//     return value1 * value2;
+//   } else {
+//     return value1 / value2;
+//   }
+// }
+
+// console.log(basicOp("+", 4, 7));
+// console.log(basicOp("-", 15, 18));
+
 // Task_66
+// function removeEveryOther(arr) {
+//   const newArray = [];
+//   arr.map((el, index) => {
+//     if ((index + 1) % 2 !== 0) {
+//       newArray.push(el);
+//     }
+//   });
+//   return newArray;
+// }
+
+// console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
+
+// Task_67
+
+// Task_68
+
+// Task_69
