@@ -1188,7 +1188,46 @@
 // console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
 
 // Task_67
+// function sumMix(x) {
+//   return x
+//     .map((el) => Number(el))
+//     .reduce((total, el) => {
+//       return (total += el);
+//     }, 0);
+// }
 
+// console.log(sumMix([9, 3, "7", "3"]));
 // Task_68
 
+// function solution(string) {
+//   const array = string.split("");
+//   const result = [];
+//   array.map((el, index, array) => {
+//     const charCode = el.charCodeAt();
+//     if (charCode >= 65 && charCode <= 90) {
+//       result.push(index);
+//     }
+//   });
+
+//   for (i = 0; i < result.length; i += 1) {
+//     array.splice(result[i] + i, 0, " ");
+//   }
+//   return array.join("");
+// }
+
+// console.log(solution("camelCasingDoingWell"));
+// console.log(solution("camelCasingTest"));
+// console.log(solution("startHearNow"));
+// console.log(solution("startHearNowDoBetterTimy"));
+
 // Task_69
+// function removeSmallest(numbers) {
+//   const newArray = [...numbers];
+//   const smallest = Math.min(...numbers);
+//   const index = numbers.indexOf(smallest);
+//   newArray.splice(index, 1);
+//   return newArray;
+// }
+
+// console.log(removeSmallest([1, 2, 3, 4, 5]));
+// console.log(removeSmallest([2, 2, 1, 2, 1]));
