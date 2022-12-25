@@ -1231,3 +1231,62 @@
 
 // console.log(removeSmallest([1, 2, 3, 4, 5]));
 // console.log(removeSmallest([2, 2, 1, 2, 1]));
+
+// Task_70
+// var countSheep = function (num) {
+//   const array = [];
+//   for (i = 1; i <= num; i += 1) {
+//     array.push(`${i} sheep...`);
+//   }
+
+//   return array.join("");
+// };
+
+// console.log(countSheep(3));
+
+// Task_71
+// function solution(str, ending) {
+//   return str.endsWith(ending);
+// }
+// Task_72
+// function getAge(inputString) {
+//   const array = inputString.split("");
+//   return Number(array[0]);
+// }
+
+// console.log(getAge("4 years old"));
+
+// Task_73
+
+// function accum(s) {
+//   const newArray = [];
+//   const array = s.toUpperCase().split("");
+//   for (i = 0; i < s.length; i += 1) {
+//     newArray.push(array[i].padEnd(i + 1, `${array[i].toLowerCase()}`));
+//   }
+
+//   return newArray.join("-");
+// }
+
+// console.log(accum("abcd")); //"A-Bb-Ccc-Dddd"
+
+// Task_74
+// function twoSum(numbers, target) {
+//   for (i = 0; i <= numbers.length; i += 1) {
+//     const diff = target - numbers[i];
+//     const newArray = [...numbers];
+//     newArray.splice(i, 1, " ");
+//     if (newArray.includes(diff)) {
+//       return [i, newArray.indexOf(diff)];
+//     }
+//   }
+// }
+
+// console.log(twoSum([1, 2, 3], 4));
+// console.log(twoSum([1234, 5678, 9012], 14690));
+// console.log(twoSum([2, 2, 3], 4));
+// console.log(twoSum([2, 3, 1], 4));
+
+// Task_75
+// Task_76
+// Task_77
