@@ -1288,5 +1288,98 @@
 // console.log(twoSum([2, 3, 1], 4));
 
 // Task_75
+// function greet(language) {
+//   let answer;
+//   switch (language) {
+//     case "czech":
+//       answer = "Vitejte";
+//       break;
+//     case "danish":
+//       answer = "Velkomst";
+//       break;
+//     case "dutch":
+//       answer = "Welkom";
+//       break;
+//     case "estonian":
+//       answer = "Tere tulemast";
+//       break;
+//     case "finnish":
+//       answer = "Tervetuloa";
+//       break;
+//     case "flemish":
+//       answer = "Welgekomen";
+//       break;
+//     case "french":
+//       answer = "Bienvenue";
+//       break;
+//     case "german":
+//       answer = "Willkommen";
+//       break;
+//     case "irish":
+//       answer = "Failte";
+//       break;
+//     case "italian":
+//       answer = "Benvenuto";
+//       break;
+//     case "latvian":
+//       answer = "Gaidits";
+//       break;
+//     case "lithuanian":
+//       answer = "Laukiamas";
+//       break;
+//     case "polish":
+//       answer = "Witamy";
+//       break;
+//     case "spanish":
+//       answer = "Bienvenido";
+//       break;
+//     case "swedish":
+//       answer = "Valkommen";
+//       break;
+//     case "welsh":
+//       answer = "Croeso";
+//       break;
+//     default:
+//       answer = "Welcome";
+//   }
+//   return answer;
+// }
+
+// console.log(greet("english"));
+// greet("dutch");
+// greet("IP_ADDRESS_INVALID");
+// greet("czech");
+
 // Task_76
+// function points(games) {
+//   return games.reduce((total, el) => {
+//     const x = Number(el[0]);
+//     const y = Number(el[2]);
+//     if (x > y) {
+//       total += 3;
+//     } else if (x === y) {
+//       total += 1;
+//     } else {
+//       total += 0;
+//     }
+//     console.log(x, y);
+//     console.log(total);
+//     return total;
+//   }, 0);
+// }
+
+// console.log(
+//   points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
+// ); //30
+
+// console.log(
+//   points(["1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4"])
+// );
+
+// console.log(
+//   points(["0:1", "0:2", "0:3", "0:4", "1:2", "1:3", "1:4", "2:3", "2:4", "3:4"])
+// );
+
 // Task_77
+// Task_78
+// Task_79
