@@ -1380,6 +1380,33 @@
 //   points(["0:1", "0:2", "0:3", "0:4", "1:2", "1:3", "1:4", "2:3", "2:4", "3:4"])
 // );
 
-// Task_77
+// Task_77 -???
+
+// function isValidWalk(walk) {
+//   if (walk.length === 10) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
+// console.log(
+//   isValidWalk(["w", "e", "w", "e", "w", "e", "w", "e", "w", "e", "w", "e"])
+// );
+// console.log(isValidWalk(["w"]));
+// console.log(isValidWalk(["n", "n", "n", "s", "n", "s", "n", "s", "n", "s"]));
+
 // Task_78
+
+// function testEven(n) {
+//   if (n % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 // Task_79
+// Task_80
+// Task_81
