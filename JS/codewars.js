@@ -1471,5 +1471,37 @@
 // );
 
 // Task_82
+// function nbDig(n, d) {
+//   const array = [];
+//   for (i = 0; i <= n; i += 1) {
+//     array.push(`${i * i}`);
+//   }
+//   return array
+//     .join("")
+//     .split("")
+//     .reduce((total, el) => {
+//       if (Number(el) === d) {
+//         total += 1;
+//       }
+
+//       return total;
+//     }, 0);
+// }
+
+// console.log(nbDig(10, 1));
+// console.log(nbDig(25, 1));
+// console.log(nbDig(5750, 0));
+// console.log(nbDig(11011, 2));
+// console.log(nbDig(12224, 8));
+// console.log(nbDig(11549, 1));
 // Task_83
+
+function stray(numbers) {
+  return numbers.sort((a, b) => a - b);
+}
+
+console.log(stray([1, 1, 2]));
+console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+console.log(stray([1, 2, 1]));
+console.log(stray([2, 1, 1]));
 // Task_84
