@@ -1408,5 +1408,68 @@
 // }
 
 // Task_79
+// function tribonacci(signature, n) {
+//   let array = [];
+//   if (n === 0) {
+//     return [];
+//   } else if (n < 3) {
+//     for (i = 1; i <= n; i += 1) {
+//       array.push(signature[i - 1]);
+//     }
+//   } else {
+//     array = [...signature];
+//     for (i = 0; i <= n - 4; i += 1) {
+//       let c =
+//         array[array.length - 1] +
+//         array[array.length - 2] +
+//         +array[array.length - 3];
+
+//       array.push(c);
+//     }
+//   }
+
+//   return array;
+// }
+
+// console.log(tribonacci([1, 1, 1], 10));
+// console.log(tribonacci([0, 0, 1], 10));
+// console.log(tribonacci([300, 200, 100], 0));
+// console.log(tribonacci([16, 1, 16], 1));
+
 // Task_80
+
+// function sumTwoSmallestNumbers(numbers) {
+//   const a = Math.min(...numbers);
+//   numbers.splice(numbers.indexOf(a), 1);
+//   const b = Math.min(...numbers);
+//   const sum = a + b;
+//   return sum;
+// }
+
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+// console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]));
+// console.log(sumTwoSmallestNumbers([3, 87, 45, 12, 7]));
+
 // Task_81
+// var number = function (busStops) {
+//   return busStops.reduce((total, el) => {
+//     total += el[0] - el[1];
+
+//     return total;
+//   }, 0);
+// };
+
+// console.log(
+//   number([
+//     [3, 0],
+//     [9, 1],
+//     [4, 10],
+//     [12, 2],
+//     [6, 1],
+//     [7, 10],
+//   ])
+// );
+
+// Task_82
+// Task_83
+// Task_84
