@@ -1496,12 +1496,25 @@
 // console.log(nbDig(11549, 1));
 // Task_83
 
-function stray(numbers) {
-  return numbers.sort((a, b) => a - b);
-}
+// function stray(numbers) {
+//   const obj = {};
+//   numbers.forEach((element) => {
+//     if (obj[element] === undefined) {
+//       obj[element] = 1;
+//     } else {
+//       obj[element] += 1;
+//     }
+//   });
 
-console.log(stray([1, 1, 2]));
-console.log(stray([17, 17, 3, 17, 17, 17, 17]));
-console.log(stray([1, 2, 1]));
-console.log(stray([2, 1, 1]));
+//   for (const key in obj) {
+//     if (obj[key] === 1) {
+//       return Number(key);
+//     }
+//   }
+// }
+
+// console.log(stray([1, 1, 2]));
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+// console.log(stray([1, 2, 1]));
+// console.log(stray([2, 1, 1]));
 // Task_84
