@@ -1517,4 +1517,27 @@
 // console.log(stray([17, 17, 3, 17, 17, 17, 17]));
 // console.log(stray([1, 2, 1]));
 // console.log(stray([2, 1, 1]));
+
 // Task_84
+
+// function arithmetic(a, b, operator) {
+//   let result = 0;
+
+//   switch (operator) {
+//     case "add":
+//       result = a + b;
+//       break;
+//     case "subtract":
+//       result = a - b;
+//       break;
+//     case "multiply":
+//       result = a * b;
+//       break;
+//     case "divide":
+//       result = a / b;
+//   }
+//   return result;
+// }
+
+// console.log(arithmetic(1, 2, "add"));
+// Task_85
