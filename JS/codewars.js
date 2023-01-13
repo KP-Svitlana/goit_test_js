@@ -1540,4 +1540,16 @@
 // }
 
 // console.log(arithmetic(1, 2, "add"));
+
 // Task_85
+// function findDifference(a, b) {
+//   return Math.abs(
+//     a.reduce((total, el) => (total *= el), 1) -
+//       b.reduce((total, el) => (total *= el), 1)
+//   );
+// }
+
+// console.log(findDifference([11, 2, 5], [1, 10, 8]));
+
+// Task_86
+// Task_87
