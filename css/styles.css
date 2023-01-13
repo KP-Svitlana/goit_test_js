@@ -53,3 +53,13 @@ body.show-modal .modal {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 }
+
+/* Theme */
+
+.theme--light {
+  background-color: #fff;
+}
+
+.theme--dark {
+  background-color: black;
+}
